@@ -948,7 +948,7 @@ do
   vim.pack.add { { src = gh 'nvim-treesitter/nvim-treesitter', version = 'main' } }
 
   -- Ensure basic parsers are installed
-  local parsers = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' }
+  local parsers = { 'bash', 'c', 'diff', 'git_config', 'git_rebase', 'gitattributes', 'gitcommit', 'gitignore', 'html', 'javascript', 'lua', 'luadoc', 'markdown_inline', 'markdown', 'query', 'rust', 'typescript', 'vim', 'vimdoc' }
   require('nvim-treesitter').install(parsers)
 
   ---@param buf integer
@@ -1001,7 +1001,16 @@ do
 end
 
 -- ============================================================
--- SECTION 10: OPTIONAL EXAMPLES / NEXT STEPS
+-- SECTION 10: CLAUDE CODE INTEGRATION
+-- Letting the plagiarism and sycophancy engine interact with my editor for fun and profit
+-- ============================================================
+do
+  vim.pack.add { { src = gh 'coder/claudecode.nvim', version = 'main' } }
+  require('claudecode').setup {}
+end
+
+-- ============================================================
+-- SECTION 11: OPTIONAL EXAMPLES / NEXT STEPS
 -- kickstart.plugins.* examples
 -- ============================================================
 do
