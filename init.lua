@@ -746,6 +746,8 @@ do
 
     stylua = {}, -- Used to format Lua code
 
+    ts_ls = {}, -- TypeScript and JavaScript language server
+
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
       on_init = function(client)
