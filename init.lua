@@ -1010,7 +1010,16 @@ do
 end
 
 -- ============================================================
--- SECTION 11: OPTIONAL EXAMPLES / NEXT STEPS
+-- SECTION 11: MARKDOWN
+-- Render tables, headings, code blocks and checkboxes in the buffer
+-- ============================================================
+do
+  vim.pack.add { gh 'MeanderingProgrammer/render-markdown.nvim' }
+  require('render-markdown').setup {}
+end
+
+-- ============================================================
+-- SECTION 12: OPTIONAL EXAMPLES / NEXT STEPS
 -- kickstart.plugins.* examples
 -- ============================================================
 do
